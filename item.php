@@ -21,7 +21,7 @@
 						function buy()
 						{
 								var qt  = $("#qt").val();
-								lof("buycart.php?i=<?=$row["id"]?>&qt="+qt);
+								lof("?do=buycart&id=<?=$row["id"]?>&qt="+qt);
 						}
 				</script>
 				<?php

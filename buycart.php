@@ -1,20 +1,20 @@
 <?php
     if(empty($_SESSION["user"]))	header("location:index.php?do=login");
     
-    if(!empty($_GET["i"]))
+    if(!empty($_GET["id"]))
     {
         if(empty($_SESSION["i"]))
         {
-            $_SESSION["i"][] = $_GET["i"];
+            $_SESSION["i"][] = $_GET["id"];
             
             if(!empty($_GET["qt"]))  $_SESSION["qt"][] = $_GET["qt"];
             else $_SESSION["qt"][] = 1;
         }
         else
         {
-            if(!in_array($_GET["i"], $_SESSION["i"]))
+            if(!in_array($_GET["id"], $_SESSION["i"]))
             {
-                $_SESSION["i"][] = $_GET["i"];
+                $_SESSION["i"][] = $_GET["id"];
                 
                 if(!empty($_GET["qt"]))  $_SESSION["qt"][] = $_GET["qt"];
                 else $_SESSION["qt"][] = 1;
