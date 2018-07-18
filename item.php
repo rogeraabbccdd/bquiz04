@@ -20,7 +20,7 @@
 		// 小分類
 		else
 		{
-			$sql = "select * from item where c2 = '".$c."' sell = 1";
+			$sql = "select * from item where c2 = '".$c."' and sell = 1";
 			
 			// 先查中分類的parent，再查大分類名字
 			$id = mysqli_fetch_array(mysqli_query($link, "select * from cat where id = '".$c."'"))["parent"];
