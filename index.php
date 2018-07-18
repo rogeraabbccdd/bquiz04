@@ -80,7 +80,7 @@
                     </div>
         <div id="right" style="overflow:scroll; height:500px">
 					<?php
-						if(empty($_GET) ||(!empty($_GET["c"])))	include "item.php";
+						if(empty($_GET) || !empty($_GET["c"]) || !empty($_GET["i"]))	include "item.php";
 						elseif(!empty($_GET["do"]))
 						{
 							if($_GET["do"] == "look")	echo "<img src='images/0401.jpg'>";
