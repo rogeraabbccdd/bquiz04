@@ -1,5 +1,5 @@
-會員註冊
-<form id="f" method="post" action="api.php?do=reg">
+會員修改
+<form id="f" method="post" action="api.php?do=em&id=<?=$_GET["id"]?>">
 姓名<input type="text" name="name"><br>
 帳號<input type="text" name="acc" id="a"><input type="button" value="檢測帳號" onclick="chk(0)"><br>
 密碼<input type="password" name="pw"><br>

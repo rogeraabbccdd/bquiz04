@@ -2,75 +2,50 @@
 <!-- saved from url=(0039) -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <?php
-	include "sql.php";
-	
-	// 使用者有登入
-	if(empty($_SESSION["user"]))	$inout = '<a href="?do=login">會員登入</a>';
-	else	$inout = '<a href="api.php?do=logout">登出</a>';
-	
-	if(empty($_SESSION["admin"]))	$ainout = '<a href="?do=admlogin">管理登入</a>';
-	else	$ainout = '<a href="admin.php">管理中心</a>';
+include "sql.php";
+$t = mysqli_num_rows(mysqli_query($link, "select * from item where sell = 1"));
 ?>
 <title>┌精品電子商務網站」</title>
-<link href="./assets/css.css" rel="stylesheet" type="text/css">
-<script src="./assets/js.js"></script>
-<script src="./assets/jquery-1.9.1.min.js"></script>
+<link href="./home_files/css.css" rel="stylesheet" type="text/css">
+<script src="./home_files/js.js"></script>
+<script src="./home_files/jquery-1.9.1.min.js"></script>
 </head>
 
 <body>
 <iframe name="back" style="display:none;"></iframe>
-	<div id="main">
+	<div id="main" style="width:1024px; height:768px; padding:10px">
     	<div id="top">
         	<a href="?">
-            	<img src="./images/0416.jpg" width="400px">
-            </a>
+            	<img src="./home_files/0416.jpg" height="70px">
+           </a>
                         <div style="padding:10px; float:right">
                 <a href="?">回首頁</a> |
                 <a href="?do=news">最新消息</a> |
                 <a href="?do=look">購物流程</a> |
                 <a href="?do=buycart">購物車</a> |
-                                <?=$inout?> |
-                                <?=$ainout?>
+                                <a href="<?=(empty($_SESSION["u"]))?"?do=login":"api.php?do=out"?>"><?=(empty($_SESSION["u"]))?"會員登入":"登出"?></a> |
+                                <a href="?do=ain">管理登入</a>
            </div>
-               <marquee> 年終特賣會開跑了 &emsp; 情人節特惠活動 </marquee>     </div>
+                <marquee>情人節特惠活動 &nbsp; 年終特賣會開跑了  </marquee>       </div>
         <div id="left" class="ct">
         	<div style="min-height:400px;">
-				<?php
-					// 把列別先放入陣列
-					$result = mysqli_query($link, "select * from cat");
-					while($row = mysqli_fetch_array($result))
-					{
-						// 大分類
-						if($row["parent"] == "0")
-						{
-							$count = mysqli_num_rows(mysqli_query($link, "select * from item where c1 = '".$row["id"]."'"));
-							$c1[] = array($row["id"], $row["name"], $count);
-						}
-						// 中分類
-						else
-						{
-							$count = mysqli_num_rows(mysqli_query($link, "select * from item where c2 = '".$row["id"]."'"));
-							$c2[$row["parent"]][] = array($row["id"], $row["name"], $count);
-						}
-					}
+			<div class='ww'><a href='?c=0'>全部商品(<?=$t?>)</a></div>
+			<?php
+				$result = mysqli_query($link, "select * from cat where parent = 0");
+				while($row = mysqli_fetch_array($result))
+				{
+					$c = mysqli_num_rows(mysqli_query($link, "select * from item where c1 = '".$row["id"]."'"));
+					echo "<div class='ww'><a href='?c=".$row["id"]."'>".$row["name"]."(".$c.")</a>";
 					
-					$count = mysqli_num_rows(mysqli_query($link, "select * from item"));
-					echo '<div class="ww"><a href="?">全部商品('.$count.')</a></div>';
-					
-					// 取出陣列資料
-					foreach($c1 as $cc1)
+					$result2 = mysqli_query($link, "select * from cat where parent = '".$row["id"]."'");
+					while($row2 = mysqli_fetch_array($result2))
 					{
-						// 大分類
-						echo '<div class="ww"><a href="?c='.$cc1[0].'">'.$cc1[1].'('.$cc1[2].')</a>';
-						
-						foreach($c2[$cc1[0]] as $cc2)
-						{
-							echo '<div class="s"><a href="?c='.$cc2[0].'">'.$cc2[1].'('.$cc2[2].')</a></div>';
-						}
-						
-						echo "</div>";
+						$cc = mysqli_num_rows(mysqli_query($link, "select * from item where c2 = '".$row2["id"]."'"));
+						echo "<div class='s'><a href='?c=".$row2["id"]."'>".$row2["name"]."(".$cc.")</div></a>";
 					}
-				?>
+					echo "</div>";
+				}
+			?>
         	            </div>
                         <span>
             	<div>進站總人數</div>
@@ -78,18 +53,16 @@
                 	00005                </div>
             </span>
                     </div>
-        <div id="right" style="overflow:scroll; height:500px">
-					<?php
-						if(empty($_GET) || !empty($_GET["c"]) || !empty($_GET["i"]))	include "item.php";
-						elseif(!empty($_GET["do"]))
-						{
-							if($_GET["do"] == "look")	echo "<img src='images/0401.jpg'>";
-							else	include ($_GET["do"].".php");
-						}
-					?>
+        <div id="right" style="overflow-y:scroll; height:500px">
+		<?php
+			$p = "main";
+			if(!empty($_GET["do"]))	$p = $_GET["do"];
+			if($p == "look")	echo "<img src='images/0401.jpg'>";
+			else include $p.".php";
+		?>
         	        </div>
         <div id="bottom" style="line-height:70px;background:url(icon/bot.png); color:#FFF;" class="ct">
-        	頁尾版權 : <?=$footer?></div>
+        	頁尾版權 :   <?=$footer?>     </div>
     </div>
 
 </body></html>
