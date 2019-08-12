@@ -1,620 +1,137 @@
-
-<!DOCTYPE HTML>
-<html lang="" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>會員 · GitBook</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="編輯使用者登入註冊功能">
-        <meta name="generator" content="GitBook 3.2.3">
-        
-        
-        
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用者 | 精品電子商務</title>
+    <meta name="description" content="編輯使用者登入註冊功能">
+    <link rel="stylesheet" href="/bquiz04/css/custom.css">
+  <link rel="shortcut icon" href="/bquiz04/images/favicon.ico">
     
-    <link rel="stylesheet" href="../gitbook/style.css">
-
-    
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism-ext/prism-okaidia.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
-
-    
-
-    
-        
-        <link rel="stylesheet" href="../styles/website.css">
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-        
-    
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="cart.html" />
-    
-    
-    <link rel="prev" href="main.html" />
-    
-
-    <style>
-    @media only screen and (max-width: 640px) {
-        .book-header .hidden-mobile {
-            display: none;
-        }
-    }
-    </style>
-    <script>
-        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"rogeraabbccdd","repo":"bquiz04","type":"star","size":"small","count":true}]};
-    </script>
-
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
-            
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
-    
-
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="../">
-            
-                <a href="../">
-            
-                    
-                    精品電子商務
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">軟體安裝測試</li>
-        
-        
-    
-        <li class="chapter " data-level="2.1" data-path="../before/file.html">
-            
-                <a href="../before/file.html">
-            
-                    
-                    整理檔案
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.2" data-path="../before/sql.html">
-            
-                <a href="../before/sql.html">
-            
-                    
-                    建立資料庫
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3" data-path="../before/func.html">
-            
-                <a href="../before/func.html">
-            
-                    
-                    編寫共用程式碼
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">前台</li>
-        
-        
-    
-        <li class="chapter " data-level="3.1" data-path="data.html">
-            
-                <a href="data.html">
-            
-                    
-                    編輯共用資料
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.2" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    首頁
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3" data-path="main.html">
-            
-                <a href="main.html">
-            
-                    
-                    商品頁
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="3.4" data-path="user.html">
-            
-                <a href="user.html">
-            
-                    
-                    會員
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.5" data-path="cart.html">
-            
-                <a href="cart.html">
-            
-                    
-                    購物功能
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.6" data-path="ain.html">
-            
-                <a href="ain.html">
-            
-                    
-                    管理登入
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">後台</li>
-        
-        
-    
-        <li class="chapter " data-level="4.1" data-path="../back/admin.html">
-            
-                <a href="../back/admin.html">
-            
-                    
-                    管理頁
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="4.2" data-path="../back/adm.html">
-            
-                <a href="../back/adm.html">
-            
-                    
-                    管理權限設置
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="4.3" data-path="../back/cat.html">
-            
-                <a href="../back/cat.html">
-            
-                    
-                    商品分類
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="4.4" data-path="../back/item.html">
-            
-                <a href="../back/item.html">
-            
-                    
-                    商品管理
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="4.5" data-path="../back/order.html">
-            
-                <a href="../back/order.html">
-            
-                    
-                    訂單管理
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="4.6" data-path="../back/user.html">
-            
-                <a href="../back/user.html">
-            
-                    
-                    會員管理
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="4.7" data-path="../back/foot.html">
-            
-                <a href="../back/foot.html">
-            
-                    
-                    頁尾版權
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">結語</li>
-        
-        
-    
-        <li class="chapter " data-level="5.1" data-path="../end/end.html">
-            
-                <a href="../end/end.html">
-            
-                    
-                    結語
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >會員</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><h1 id="&#x4F7F;&#x7528;&#x8005;">&#x4F7F;&#x7528;&#x8005;</h1>
-<p>&#x7DE8;&#x8F2F;&#x4F7F;&#x7528;&#x8005;&#x767B;&#x5165;&#x8A3B;&#x518A;&#x529F;&#x80FD;</p>
-<h2 id="&#x767B;&#x5165;&#x9801;">&#x767B;&#x5165;&#x9801;</h2>
-<p>&#x958B;&#x65B0;&#x6A94; <code>login.php</code> &#x505A;&#x767B;&#x5165;&#x9801;</p>
-<pre lang="php" class=" language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
-    <span class="token comment">// &#x7522;&#x751F;&#x9A57;&#x8B49;&#x78BC;</span>
-    <span class="token variable">$n</span> <span class="token operator">=</span> <span class="token function">getnums</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <link rel="preload" href="/bquiz04/assets/css/0.styles.039e8801.css" as="style"><link rel="preload" href="/bquiz04/assets/js/app.ab4d9e42.js" as="script"><link rel="preload" href="/bquiz04/assets/js/5.160aad45.js" as="script"><link rel="preload" href="/bquiz04/assets/js/27.56a70793.js" as="script"><link rel="prefetch" href="/bquiz04/assets/js/1.1740a04a.js"><link rel="prefetch" href="/bquiz04/assets/js/10.35d14c95.js"><link rel="prefetch" href="/bquiz04/assets/js/11.abbdfc6a.js"><link rel="prefetch" href="/bquiz04/assets/js/12.9d335193.js"><link rel="prefetch" href="/bquiz04/assets/js/13.7a32ac7f.js"><link rel="prefetch" href="/bquiz04/assets/js/14.64c7dca7.js"><link rel="prefetch" href="/bquiz04/assets/js/15.d86e5c42.js"><link rel="prefetch" href="/bquiz04/assets/js/16.bcc4623a.js"><link rel="prefetch" href="/bquiz04/assets/js/17.c1e35e7a.js"><link rel="prefetch" href="/bquiz04/assets/js/18.e63beab7.js"><link rel="prefetch" href="/bquiz04/assets/js/19.41647604.js"><link rel="prefetch" href="/bquiz04/assets/js/2.faccbec1.js"><link rel="prefetch" href="/bquiz04/assets/js/20.3932e507.js"><link rel="prefetch" href="/bquiz04/assets/js/21.2c45817f.js"><link rel="prefetch" href="/bquiz04/assets/js/22.7b2f3b00.js"><link rel="prefetch" href="/bquiz04/assets/js/23.e40d7d8e.js"><link rel="prefetch" href="/bquiz04/assets/js/24.7e3bef2e.js"><link rel="prefetch" href="/bquiz04/assets/js/25.2d9bcff5.js"><link rel="prefetch" href="/bquiz04/assets/js/26.4a4cb144.js"><link rel="prefetch" href="/bquiz04/assets/js/28.10a81ede.js"><link rel="prefetch" href="/bquiz04/assets/js/6.e53b3c53.js"><link rel="prefetch" href="/bquiz04/assets/js/7.71f3a489.js"><link rel="prefetch" href="/bquiz04/assets/js/8.0abcaefb.js"><link rel="prefetch" href="/bquiz04/assets/js/9.16dc6ba1.js"><link rel="prefetch" href="/bquiz04/assets/js/vendors~docsearch.fd562b00.js">
+    <link rel="stylesheet" href="/bquiz04/assets/css/0.styles.039e8801.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/bquiz04/" class="home-link router-link-active"><!----> <span class="site-name">
+			精品電子商務
+		</span></a> <div class="links" style="max-width:nullpx;"><div class="user-settings"><a href="#" class="settings-button"><svg aria-hidden="true" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 settings-icon"><path fill="currentColor" d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z"></path></svg></a> <div class="user-settings-menu" style="display:none;"><div class="theme-options"><!----> <!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox"></div> <!----> <!----></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://bquiz.kento520.tw" target="_blank" rel="noopener noreferrer" class="nav-link external">
+	首頁
+	<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/rogeraabbccdd/bquiz04" target="_blank" rel="noopener noreferrer" class="nav-link external">
+	GitHub
+	<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://bquiz.kento520.tw" target="_blank" rel="noopener noreferrer" class="nav-link external">
+	首頁
+	<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/rogeraabbccdd/bquiz04" target="_blank" rel="noopener noreferrer" class="nav-link external">
+	GitHub
+	<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/bquiz04/" class="sidebar-link">首頁</a></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>前置作業</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/bquiz04/before/file.html" class="sidebar-link">整理檔案</a></li><li><a href="/bquiz04/before/sql.html" class="sidebar-link">建立資料庫</a></li><li><a href="/bquiz04/before/func.html" class="sidebar-link">編寫共用程式碼</a></li><li><a href="/bquiz04/before/data.html" class="sidebar-link">編輯共用資料</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>前台</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/bquiz04/front/indexx.html" class="sidebar-link">首頁</a></li><li><a href="/bquiz04/front/main.html" class="sidebar-link">商品頁</a></li><li><a href="/bquiz04/front/user.html" class="active sidebar-link">使用者</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/bquiz04/front/user.html#登入頁" class="sidebar-link">登入頁</a></li><li class="sidebar-sub-header"><a href="/bquiz04/front/user.html#註冊頁" class="sidebar-link">註冊頁</a></li><li class="sidebar-sub-header"><a href="/bquiz04/front/user.html#處理表單資料" class="sidebar-link">處理表單資料</a></li></ul></li><li><a href="/bquiz04/front/cart.html" class="sidebar-link">購物功能</a></li><li><a href="/bquiz04/front/ain.html" class="sidebar-link">管理登入頁</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>後台</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/bquiz04/back/admin.html" class="sidebar-link">管理頁</a></li><li><a href="/bquiz04/back/adm.html" class="sidebar-link">管理權限設置</a></li><li><a href="/bquiz04/back/cat.html" class="sidebar-link">商品分類</a></li><li><a href="/bquiz04/back/item.html" class="sidebar-link">商品管理</a></li><li><a href="/bquiz04/back/order.html" class="sidebar-link">訂單管理</a></li><li><a href="/bquiz04/back/user.html" class="sidebar-link">使用者管理</a></li><li><a href="/bquiz04/back/foot.html" class="sidebar-link">頁尾版權管理</a></li></ul></div></li><li><a href="/bquiz04/end/end.html" class="sidebar-link">結語</a></li></ul> </div> <div class="page"> <div custom="true" class="content__default"><h1 id="使用者"><a href="#使用者" aria-hidden="true" class="header-anchor">#</a> 使用者</h1> <p>編輯使用者登入註冊功能</p> <h2 id="登入頁"><a href="#登入頁" aria-hidden="true" class="header-anchor">#</a> 登入頁</h2> <p>開新檔 <code>login.php</code> 做登入頁</p> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+    <span class="token comment">// 產生驗證碼</span>
+	<span class="token variable">$n</span> <span class="token operator">=</span> <span class="token function">getnums</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token delimiter important">?&gt;</span></span>
-&#x7B2C;&#x4E00;&#x6B21;&#x8CFC;&#x7269;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+第一次購物<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>?do=reg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>img/0413.jpg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-&#x6703;&#x54E1;&#x767B;&#x5165;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+會員登入<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>in<span class="token punctuation">&quot;</span></span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>api.php?do=in<span class="token punctuation">&quot;</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>post<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-&#x5E33;&#x865F;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>acc<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-&#x5BC6;&#x78BC;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pw<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+帳號<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>acc<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+密碼<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pw<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
 <span class="token php language-php"><span class="token delimiter important">&lt;?=</span><span class="token punctuation">(</span><span class="token variable">$n</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token double-quoted-string string">&quot;+&quot;</span><span class="token punctuation">.</span><span class="token variable">$n</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token double-quoted-string string">&quot;=&quot;</span><span class="token punctuation">)</span><span class="token delimiter important">?&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>num<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>num<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>btn<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x767B;&#x5165;<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
-// &#x9EDE;&#x767B;&#x5165;&#x6309;&#x9215;&#x6642;
-$(&quot;#btn&quot;).on(&quot;click&quot;, function(e){
-    // &#x6AA2;&#x67E5;&#x9A57;&#x8B49;&#x78BC;&#x662F;&#x5426;&#x6B63;&#x78BA;&#xFF0C;&#x6B63;&#x78BA;&#x7684;&#x8A71;&#x9001;&#x51FA;&#x8868;&#x55AE;
-    if($(&quot;#num&quot;).val() != <span class="token php language-php"><span class="token delimiter important">&lt;?=</span><span class="token variable">$n</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token delimiter important">?&gt;</span></span>)    alert(&quot;&#x9A57;&#x8B49;&#x78BC;&#x932F;&#x8AA4;&quot;);
-    else $(&quot;#in&quot;).submit();
-})
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<h2 id="&#x8A3B;&#x518A;&#x9801;">&#x8A3B;&#x518A;&#x9801;</h2>
-<p>&#x958B;&#x65B0;&#x6A94; <code>reg.php</code> &#x505A;&#x767B;&#x5165;&#x9801;  </p>
-<pre lang="html" class=" language-html"><code class=" language-html">&#x6703;&#x54E1;&#x8A3B;&#x518A;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>btn<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>登入<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token comment">// 點登入按鈕時</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#btn&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 檢查驗證碼是否正確，正確的話送出表單</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#num&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token php language-php"><span class="token delimiter important">&lt;?=</span><span class="token variable">$n</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token delimiter important">?&gt;</span></span><span class="token punctuation">)</span>	<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;驗證碼錯誤&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">else</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#in&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="註冊頁"><a href="#註冊頁" aria-hidden="true" class="header-anchor">#</a> 註冊頁</h2> <p>開新檔 <code>reg.php</code> 做登入頁</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>會員註冊
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>post<span class="token punctuation">&quot;</span></span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>api.php?do=reg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-&#x59D3;&#x540D;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-&#x5E33;&#x865F;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>acc<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x6AA2;&#x6E2C;&#x5E33;&#x865F;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>chk(0)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-&#x5BC6;&#x78BC;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pw<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-&#x96FB;&#x8A71;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tel<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-&#x4F4F;&#x5740;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>adr<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-&#x96FB;&#x5B50;&#x4FE1;&#x7BB1;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mail<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x9001;&#x51FA;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>chk(1)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
-    function chk(submit)
-    {
-        // &#x7372;&#x53D6;&#x5E33;&#x865F;&#x6B04;&#x4F4D;&#x7684;&#x503C;
-        var a = $(&quot;#a&quot;).val();
-        // &#x5982;&#x679C;&#x5E33;&#x865F;&#x8F38;&#x5165;admin&#xFF0C;&#x76F4;&#x63A5;&#x8DF3;&#x51FA;&#x8A0A;&#x606F;
-        if(a == &quot;admin&quot;)    alert(&quot;&#x7121;&#x6CD5;&#x4F7F;&#x7528;admin&#x7576;&#x5E33;&#x865F;&quot;);
-        // &#x5982;&#x679C;&#x4E0D;&#x662F;&#xFF0C;&#x6AA2;&#x67E5;&#x5E33;&#x865F;
-        else
-        {
-            // &#x4F7F;&#x7528;ajax&#x5411;api.php&#x8981;&#x8CC7;&#x6599;
-            $.post(&quot;api.php?do=chk&quot;, {a}, function(r){
-                // &#x5982;&#x679C;&#x56DE;&#x50B3;ok
-                if(r == &quot;ok&quot;)
-                {
-                    // &#x5982;&#x679C;submit&#x70BA;1&#xFF0C;&#x9001;&#x51FA;&#x8A3B;&#x518A;&#x8868;&#x55AE;
-                    if(submit)    $(&quot;#form&quot;).submit();
-                    // &#x5982;&#x679C;&#x70BA;0&#xFF0C;&#x53EA;&#x662F;&#x55AE;&#x7D14;&#x7684;&#x6AA2;&#x67E5;&#x5E33;&#x865F;
-                    else alert(&quot;&#x5E33;&#x865F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&quot;);
-                }
-                else alert(&quot;&#x5E33;&#x865F;&#x7121;&#x6CD5;&#x4F7F;&#x7528;&quot;);
-            })    
-        }
-    }
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<h2 id="&#x8655;&#x7406;&#x8868;&#x55AE;&#x8CC7;&#x6599;">&#x8655;&#x7406;&#x8868;&#x55AE;&#x8CC7;&#x6599;</h2>
-<p>&#x958B;&#x65B0;&#x6A94; <code>api.php</code> &#xFF0C;&#x5BEB;&#x5165;&#x8655;&#x7406;&#x8868;&#x55AE;&#x8CC7;&#x6599;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;    </p>
-<pre lang="php" class=" language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
-    <span class="token comment">// &#x5F15;&#x7528;function</span>
+姓名<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+帳號<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>acc<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>檢測帳號<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>chk(0)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+密碼<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pw<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+電話<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tel<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+住址<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>adr<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+電子信箱<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mail<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>送出<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>chk(1)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">function</span> <span class="token function">chk</span><span class="token punctuation">(</span><span class="token parameter">submit</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+        <span class="token comment">// 獲取帳號欄位的值</span>
+        <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 如果帳號輸入admin，直接跳出訊息</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token string">&quot;admin&quot;</span><span class="token punctuation">)</span>	<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;無法使用admin當帳號&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 如果不是，檢查帳號</span>
+		<span class="token keyword">else</span>
+		<span class="token punctuation">{</span>
+            <span class="token comment">// 使用ajax向api.php要資料</span>
+			$<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">&quot;api.php?do=chk&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">r</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">// 如果回傳ok</span>
+				<span class="token keyword">if</span><span class="token punctuation">(</span>r <span class="token operator">==</span> <span class="token string">&quot;ok&quot;</span><span class="token punctuation">)</span>
+				<span class="token punctuation">{</span>
+                    <span class="token comment">// 如果submit為1，送出註冊表單</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>submit<span class="token punctuation">)</span>	<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#form&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token comment">// 如果為0，只是單純的檢查帳號</span>
+					<span class="token keyword">else</span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;帳號可以使用&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+				<span class="token keyword">else</span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;帳號無法使用&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span><span class="token punctuation">)</span>	
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h2 id="處理表單資料"><a href="#處理表單資料" aria-hidden="true" class="header-anchor">#</a> 處理表單資料</h2> <p>開新檔 <code>api.php</code> ，寫入處理表單資料的程式碼</p> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+    <span class="token comment">// 引用function</span>
     <span class="token keyword">include</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;sql.php&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment">// &#x4EE5; $_GET[&quot;do&quot;] &#x4F86;&#x5224;&#x65B7;&#x8981;&#x57F7;&#x884C;&#x4EC0;&#x9EBC;&#x52D5;&#x4F5C;</span>
-    <span class="token keyword">switch</span><span class="token punctuation">(</span><span class="token variable">$_GET</span><span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;do&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token comment">// &#x767B;&#x5165;</span>
+    
+    <span class="token comment">// 以 $_GET[&quot;do&quot;] 來判斷要執行什麼動作</span>
+	<span class="token keyword">switch</span><span class="token punctuation">(</span><span class="token variable">$_GET</span><span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;do&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+        <span class="token comment">// 登入</span>
         <span class="token keyword">case</span> <span class="token double-quoted-string string">&quot;in&quot;</span><span class="token punctuation">:</span>
-            <span class="token comment">// &#x67E5;&#x8A62;&#x662F;&#x5426;&#x6709;&#x9019;&#x500B;&#x5E33;&#x865F;</span>
-            <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token function">All</span><span class="token punctuation">(</span>&quot;select <span class="token operator">*</span> from user where acc <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&quot;.$_POST[&quot;acc&quot;].&quot;&apos;</span> <span class="token keyword">and</span> pw <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&quot;.$_POST[&quot;pw&quot;].&quot;&apos;</span> <span class="token double-quoted-string string">&quot;);
-            <span class="token interpolation"><span class="token variable">$num</span></span> = count(<span class="token interpolation"><span class="token variable">$result</span></span>);
-
-            // &#x5982;&#x679C;&#x6709;
-            if(<span class="token interpolation"><span class="token variable">$num</span></span> &gt; 0) 
-            {
-                // &#x76F4;&#x63A5;&#x628A;&#x6240;&#x6709;&#x6B04;&#x4F4D;&#x8CC7;&#x6599;&#x653E;&#x5165;session
-                <span class="token interpolation"><span class="token variable">$_SESSION</span></span> = <span class="token interpolation"><span class="token variable">$result</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span></span>;
-                lo(&quot;</span>index<span class="token punctuation">.</span>php<span class="token double-quoted-string string">&quot;);
-            }
-            // &#x6C92;&#x6709;&#x7684;&#x8A71;&#x5247;&#x8DF3;&#x51FA;&#x8A0A;&#x606F;&#x4E26;&#x56DE;&#x767B;&#x5165;&#x9801;
-            else echo &quot;</span><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;&#x5E33;&#x865F;&#x6216;&#x5BC6;&#x78BC;&#x932F;&#x8AA4;&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> window<span class="token punctuation">.</span>location<span class="token operator">=</span><span class="token single-quoted-string string">&apos;index.php?do=login&apos;</span><span class="token punctuation">;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span class="token double-quoted-string string">&quot;;
-            break;
-
-        // &#x6AA2;&#x67E5;&#x5E33;&#x865F;
-        case &quot;</span>chk<span class="token double-quoted-string string">&quot;:
-            // &#x67E5;&#x8A62;&#x662F;&#x5426;&#x6709;&#x9019;&#x500B;&#x5E33;&#x865F;
-            <span class="token interpolation"><span class="token variable">$num</span></span> = count(All(&quot;</span>select <span class="token operator">*</span> from user where acc <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&quot;.$_POST[&quot;a&quot;].&quot;&apos;</span><span class="token double-quoted-string string">&quot;));
-            if(<span class="token interpolation"><span class="token variable">$num</span></span> &gt; 0) echo &quot;</span>x<span class="token double-quoted-string string">&quot;;
-            else echo &quot;</span>ok<span class="token double-quoted-string string">&quot;;
-            break;
-
-        // &#x8A3B;&#x518A;
-        case &quot;</span>reg<span class="token double-quoted-string string">&quot;:
-            <span class="token interpolation"><span class="token variable">$_POST</span></span>[&quot;</span>t<span class="token double-quoted-string string">&quot;] = strtotime(&quot;</span>now<span class="token double-quoted-string string">&quot;);
-            upd(&quot;</span>user<span class="token double-quoted-string string">&quot;, <span class="token interpolation"><span class="token variable">$_POST</span></span>, 0, 1);
-            lo(&quot;</span>index<span class="token punctuation">.</span>php<span class="token operator">?</span><span class="token keyword">do</span><span class="token operator">=</span>login<span class="token double-quoted-string string">&quot;);
-            break;
-
-        // &#x767B;&#x51FA;
-        case &quot;</span>out<span class="token double-quoted-string string">&quot;:
-            session_unset();
-            session_destroy();
-            lo(&quot;</span>index<span class="token punctuation">.</span>php&quot;<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 查詢是否有這個帳號</span>
+			<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token function">All</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;select * from user where acc = '&quot;</span><span class="token punctuation">.</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;acc&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token double-quoted-string string">&quot;' and pw = '&quot;</span><span class="token punctuation">.</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;pw&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token double-quoted-string string">&quot;' &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token variable">$num</span> <span class="token operator">=</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token variable">$result</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            
+            <span class="token comment">// 如果有</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$num</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> 
+			<span class="token punctuation">{</span>
+                <span class="token operator">/</span><span class="token operator">/</span> 直接把所有欄位資料放入session
+				<span class="token variable">$_SESSION</span> <span class="token operator">=</span> <span class="token variable">$result</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+				<span class="token function">lo</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;index.php&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token operator">/</span><span class="token operator">/</span> 沒有的話則跳出訊息並回登入頁
+			<span class="token keyword">else</span> <span class="token keyword">echo</span> <span class="token double-quoted-string string">&quot;&lt;script&gt;alert('帳號或密碼錯誤'); window.location='index.php?do=login';&lt;/script&gt;&quot;</span><span class="token punctuation">;</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        <span class="token comment">// 檢查帳號</span>
+        <span class="token keyword">case</span> <span class="token double-quoted-string string">&quot;chk&quot;</span><span class="token punctuation">:</span>
+            <span class="token comment">// 查詢是否有這個帳號</span>
+			<span class="token variable">$num</span> <span class="token operator">=</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token function">All</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;select * from user where acc = '&quot;</span><span class="token punctuation">.</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;a&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token double-quoted-string string">&quot;'&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$num</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">echo</span> <span class="token double-quoted-string string">&quot;x&quot;</span><span class="token punctuation">;</span>
+			<span class="token keyword">else</span> <span class="token keyword">echo</span> <span class="token double-quoted-string string">&quot;ok&quot;</span><span class="token punctuation">;</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        <span class="token comment">// 註冊</span>
+		<span class="token keyword">case</span> <span class="token double-quoted-string string">&quot;reg&quot;</span><span class="token punctuation">:</span>
+			<span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token double-quoted-string string">&quot;t&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">strtotime</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;now&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">upd</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;user&quot;</span><span class="token punctuation">,</span> <span class="token variable">$_POST</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">lo</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;index.php?do=login&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        <span class="token comment">// 登出</span>
+		<span class="token keyword">case</span> <span class="token double-quoted-string string">&quot;out&quot;</span><span class="token punctuation">:</span>
+			<span class="token function">session_unset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">session_destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">lo</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;index.php&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
             <span class="token keyword">break</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token delimiter important">?&gt;</span></span>
-</code></pre>
-</body></html>
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
-                    </div>
-                
-            </div>
-
-            
-                
-                <a href="main.html" class="navigation navigation-prev " aria-label="Previous page: 商品頁">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="cart.html" class="navigation navigation-next " aria-label="Next page: 購物功能">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
-        
-    </div>
-
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"description":"編輯使用者登入註冊功能","title":"會員","level":"3.4","depth":1,"next":{"title":"購物功能","level":"3.5","depth":1,"path":"front/cart.md","ref":"front/cart.md","articles":[]},"previous":{"title":"商品頁","level":"3.3","depth":1,"path":"front/main.md","ref":"front/main.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["prism-ext","-highlight","ga","github","github-buttons","livereload"],"pluginsConfig":{"prism":{"theme":"prismjs/themes/prism-okaidia.css"},"github":{"url":"https://github.com/rogeraabbccdd/bquiz04"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"night","family":"sans","size":2},"prism-ext":{},"github-buttons":{"buttons":[{"user":"rogeraabbccdd","repo":"bquiz04","type":"star","size":"small","count":true}]},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"front/user.md","mtime":"2019-07-04T14:47:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T14:48:50.609Z"},"basePath":"..","book":{"language":""}});
-        });
-    </script>
-</div>
-
-        
-    <script src="../gitbook/gitbook.js"></script>
-    <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-
-    </body>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+				&lt;
+				<a href="/bquiz04/front/main.html" class="prev">
+					商品頁
+				</a></span> <span class="next"><a href="/bquiz04/front/cart.html">
+					購物功能
+				</a>
+				&gt;
+			</span></p></div> </div> <!----></div><div class="global-ui"></div></div>
+    <script src="/bquiz04/assets/js/app.ab4d9e42.js" defer></script><script src="/bquiz04/assets/js/5.160aad45.js" defer></script><script src="/bquiz04/assets/js/27.56a70793.js" defer></script>
+  </body>
 </html>
-
